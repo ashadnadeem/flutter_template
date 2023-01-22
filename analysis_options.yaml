@@ -8,6 +8,46 @@
 # The following line activates a set of recommended lints for Flutter apps,
 # packages, and plugins designed to encourage good coding practices.
 include: package:flutter_lints/flutter.yaml
+analyzer:
+  errors:
+    #supported options: 'ignore', 'false', 'include', 'true', 'error', 'info', and 'warning'
+    # ignores
+    avoid_print: ignore
+    # error
+    file_names: error
+    always_specify_types: error
+    annotate_overrides: error
+    avoid_function_literals_in_foreach_calls: error
+    avoid_unnecessary_containers: error
+    camel_case_types: error
+    dead_code: error
+    depend_on_referenced_packages: error
+    deprecated_member_use: error
+    empty_statements: error
+    library_private_types_in_public_api: error
+    must_be_immutable: error
+    no_leading_underscores_for_local_identifiers: error
+    non_constant_identifier_names: error
+    override_on_non_overriding_member: error
+    prefer_const_constructors: error
+    prefer_relative_imports: info
+    prefer_const_constructors_in_immutables: error
+    prefer_interpolation_to_compose_strings: error
+    prefer_typing_uninitialized_variables: error
+    require_trailing_commas: error
+    sized_box_for_whitespace: error
+    sort_child_properties_last: error
+    todo: error
+    unnecessary_const: error
+    unnecessary_import: error
+    unnecessary_new: error
+    unnecessary_string_interpolations: error
+    unused_element: error
+    unused_field: error
+    unused_import: error
+    unused_local_variable: error
+    use_build_context_synchronously: error
+    use_key_in_widget_constructors: error
 
 linter:
   # The lint rules applied to this project can be customized in the
@@ -24,6 +64,25 @@ linter:
   rules:
     # avoid_print: false  # Uncomment to disable the `avoid_print` rule
     # prefer_single_quotes: true  # Uncomment to enable the `prefer_single_quotes` rule
+    # prefer_const_constructors: true
+    # prefer_const_constructors_in_immutables: true
+    # prefer_const_literals_to_create_immutables: true
+    # prefer_const_declarations: true
+    # prefer_final_fields: true
+    # prefer_final_locals: true
+    - always_specify_types
+    - always_put_control_body_on_new_line
+    - prefer_interpolation_to_compose_strings
+    - prefer_relative_imports
+    - prefer_single_quotes
+    - require_trailing_commas
+    - sized_box_for_whitespace
+    - sort_child_properties_last
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    - use_full_hex_values_for_flutter_colors
+
+    
 
 # Additional information about this file can be found at
 # https://dart.dev/guides/language/analysis-options
